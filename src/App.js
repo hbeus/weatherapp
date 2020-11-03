@@ -1,8 +1,17 @@
+import React from 'react';
+import './shared/global/Global.css';
+import { Routing } from './routes/Routing';
+import { NavBar } from './components/navbar/NavBar';
+import { WeatherApi } from './shared/api/WeatherApi';
+
 function App() {
   return (
-   <div>
-
-   </div>
+    <>
+      <WeatherApi>
+        <NavBar />
+        <Routing />
+      </WeatherApi>
+    </>
   );
 }
 

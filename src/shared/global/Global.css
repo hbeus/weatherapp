@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600&display=swap'); */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+html {
+  font-size: 62.5%;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  padding: 6rem 9rem 0rem 9rem;
+  font-size: 1.4rem;
+  background: url('../images/planet.png') no-repeat,
+    url('../images/03.jpg') no-repeat center center fixed;
+  background-size: 800px, cover;
+  background-position: bottom -300px right -200px, top left;
+  transition: background 0.25s ease;
+}
+
+@media all and (min-width: 1400px) {
+  body {
+    background: url('../images/planet.png') no-repeat,
+      url('../images/02.jpg') no-repeat center center fixed;
+    background-size: 1000px, cover;
+    background-position: bottom -300px right -150px, top left;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  body {
+    background: url('../images/planet.png') no-repeat,
+      url('../images/02.jpg') no-repeat center center fixed;
+    background-size: 600px, cover;
+    background-position: bottom -200px right -200px, top left;
+  }
+}
+
+@media all and (max-width: 900px) {
+  body {
+    background-position: bottom -300px right -200px, top left;
+  }
+}
+@media all and (max-width: 800px) {
+  body {
+    padding: 3rem 6rem 0rem 6rem;
+    background-position: bottom -400px right -200px, top left;
+  }
+}
+@media all and (max-width: 700px) {
+  body {
+    padding: 3rem 6rem 0rem 6rem;
+    background-position: bottom -800px center, top left;
+    background-size: 800px;
+  }
+}
+@media all and (max-width: 600px) {
+  body {
+    padding: 3rem 2.4rem 0rem 2.4rem;
+  }
+}
+
+a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button,
+label,
+input,
+img {
+  display: block;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}

@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 90px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar ul li {
+  border-radius: 4px;
+  height: 100%;
+  padding: 1.2rem 1.8rem;
+  margin-right: 30px;
+}
+
+.navbar ul li a:hover {
+  transition: 0.1s ease-in-out;
+  color: #ffad73;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0px;
+}
