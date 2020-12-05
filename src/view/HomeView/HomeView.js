@@ -14,7 +14,7 @@ export const HomeView = () => {
 
   const displayData = () => {
     if (data) {
-      return sol.map((sol) => {
+      return sol.slice(0, 5).map((sol) => {
         if (
           data[sol].hasOwnProperty('AT') &&
           data[sol].AT.hasOwnProperty('mx')
@@ -49,6 +49,37 @@ export const HomeView = () => {
                 <sup className="weather__item__temp__degree--normalize">
                   &#8451;
                 </sup>
+              </div>
+            </div>
+          );
+        } else {
+          return (
+            <div className="weather__item">
+              <h2 className="weather__item__title">
+                <span className="weather__item__title--reading"></span>
+                Sol <span className="weather__item__title--num"> {sol}</span>
+              </h2>
+              <p className="weather__item__date">
+                {dateFormat(data[sol].Last_UTC)}
+              </p>
+              <div className="weather__item__temp__container">
+                <div className="weather__item__temp">
+                  <span className="weather__item__temp__title">High: </span>
+                  <span className="weather__item__temp__num">
+                    N/A
+                    <sup className="weather__item__temp__degree">&#8451;</sup>
+                  </span>
+                </div>
+                <div className="weather__item__temp">
+                  <span className="weather__item__temp__title">Low:</span>{' '}
+                  <span className="weather__item__temp__num">
+                    N/A
+                    <sup className="weather__item__temp__degree">&#8451;</sup>
+                  </span>
+                </div>
+              </div>
+              <div className="weather__item__temp__average">
+                Unknown average temperature.
               </div>
             </div>
           );
