@@ -14,9 +14,6 @@ export const NavBar = () => {
           <li>
             <a href="apply">Apply</a>
           </li>
-          <li>
-            <a href="dawdawdwa">Not Found</a>
-          </li>
         </ul>
       </nav>
     </header>

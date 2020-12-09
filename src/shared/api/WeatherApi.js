@@ -21,9 +21,6 @@ export const WeatherApi = (props) => {
 
   return (
     <WeatherContext.Provider value={{ data: data, sol: sol }}>
-      {/* -----> <WeatherContext.Provider value={[data]}> */}
-      {/* <WeatherContext.Provider value={([data, setData], [sol, setSol])}> */}
-      {/* <WeatherContext.Provider value={({ data }, { sol })}> */}
       {props.children}
     </WeatherContext.Provider>
   );

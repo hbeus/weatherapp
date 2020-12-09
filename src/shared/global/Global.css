@@ -58,7 +58,7 @@ body {
 @media all and (max-width: 700px) {
   body {
     padding: 3rem 6rem 0rem 6rem;
-    background-position: bottom -800px center, top left;
+    background-position: bottom -1200px center, top left;
     background-size: 800px;
   }
 }
